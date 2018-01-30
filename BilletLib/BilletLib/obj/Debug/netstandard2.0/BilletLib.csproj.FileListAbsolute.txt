@@ -1,0 +1,9 @@
+C:\Users\Peter\Source\Repos\billetsystem-PeterKruhoffer\BilletLib\BilletLib\bin\Debug\netstandard2.0\BilletLib.deps.json
+C:\Users\Peter\Source\Repos\billetsystem-PeterKruhoffer\BilletLib\BilletLib\bin\Debug\netstandard2.0\BilletLib.dll
+C:\Users\Peter\Source\Repos\billetsystem-PeterKruhoffer\BilletLib\BilletLib\bin\Debug\netstandard2.0\BilletLib.pdb
+C:\Users\Peter\Source\Repos\billetsystem-PeterKruhoffer\BilletLib\BilletLib\obj\Debug\netstandard2.0\BilletLib.csprojResolveAssemblyReference.cache
+C:\Users\Peter\Source\Repos\billetsystem-PeterKruhoffer\BilletLib\BilletLib\obj\Debug\netstandard2.0\BilletLib.csproj.CoreCompileInputs.cache
+C:\Users\Peter\Source\Repos\billetsystem-PeterKruhoffer\BilletLib\BilletLib\obj\Debug\netstandard2.0\BilletLib.AssemblyInfoInputs.cache
+C:\Users\Peter\Source\Repos\billetsystem-PeterKruhoffer\BilletLib\BilletLib\obj\Debug\netstandard2.0\BilletLib.AssemblyInfo.cs
+C:\Users\Peter\Source\Repos\billetsystem-PeterKruhoffer\BilletLib\BilletLib\obj\Debug\netstandard2.0\BilletLib.dll
+C:\Users\Peter\Source\Repos\billetsystem-PeterKruhoffer\BilletLib\BilletLib\obj\Debug\netstandard2.0\BilletLib.pdb
