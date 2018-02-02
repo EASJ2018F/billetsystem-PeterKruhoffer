@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BilletLibrary", "BilletLibrary\BilletLibrary.csproj", "{86B96639-0752-4E1B-A69C-0B816D7B2C82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BilletLibraryTests", "BilletLibraryTests\BilletLibraryTests.csproj", "{5645FDAC-E739-49D1-B016-C92443A2EA99}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{86B96639-0752-4E1B-A69C-0B816D7B2C82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86B96639-0752-4E1B-A69C-0B816D7B2C82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86B96639-0752-4E1B-A69C-0B816D7B2C82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86B96639-0752-4E1B-A69C-0B816D7B2C82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5645FDAC-E739-49D1-B016-C92443A2EA99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5645FDAC-E739-49D1-B016-C92443A2EA99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5645FDAC-E739-49D1-B016-C92443A2EA99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5645FDAC-E739-49D1-B016-C92443A2EA99}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {047AEA81-4B6A-4A05-A896-5EDF7D028CEB}
+	EndGlobalSection
+EndGlobal
