@@ -34,14 +34,11 @@ namespace BilletLibrary.Tests
         }
 
         [TestMethod]
+        [ExpectedException(typeof(ArgumentException), "Max 7 tegn i nummerplade")]
         public void NummerpladeExceptionTest()
         {
             //Arange
-            Bil bil = new Bil("1234567");
-            //Act
-            //bil.Nummerplade = "0123456890";
-            //Assert
-            Assert.IsTrue(bil.Nummerplade.Length > 7);
+            Bil bil = new Bil("12345678");
         }
     }
 }

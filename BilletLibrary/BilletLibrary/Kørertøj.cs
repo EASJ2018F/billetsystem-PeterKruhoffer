@@ -23,10 +23,10 @@ namespace BilletLibrary
         public Kørertøj(string nummerplade)
         {
             _nummerplade = nummerplade;
-            //if (nummerplade.Length > 7)
-            //{
-            //    throw new ArgumentException("Max 7 tegn i nummerplade");
-            //}
+            if (nummerplade.Length > 7)
+            {
+                throw new ArgumentException("Max 7 tegn i nummerplade");
+            }
         }
         public abstract int Pris();
 
