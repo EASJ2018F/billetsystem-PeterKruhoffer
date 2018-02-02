@@ -15,7 +15,7 @@ namespace BilletLibrary.Tests
         public void BilPrisTest()
         {
             //Arange
-            Bil bil = new Bil("1234567");
+            Bil bil = new Bil("0123456");
             //Act
             int pris = bil.Pris();
             //Assert
@@ -26,7 +26,7 @@ namespace BilletLibrary.Tests
         public void KørertøjTest()
         {
             //Arange
-            Bil bil = new Bil("1234567");
+            Bil bil = new Bil("0123456");
             //Act
             string kørertøj = bil.TypeAfKørertøj();
             //Assert
@@ -37,9 +37,9 @@ namespace BilletLibrary.Tests
         public void NummerpladeExceptionTest()
         {
             //Arange
-            Bil bil = new Bil("12345678");
+            Bil bil = new Bil("1234567");
             //Act
-            
+            //bil.Nummerplade = "0123456890";
             //Assert
             Assert.IsTrue(bil.Nummerplade.Length > 7);
         }

@@ -8,17 +8,11 @@ namespace BilletLibrary
 {
     public abstract class Kørertøj
     {
+        private string _nummerplade;
         public string Nummerplade
         {
-            get
-            {
-                if (Nummerplade.Length > 7)
-                {
-                    throw new ArgumentException("Max 7 tegn i nummerplade");
-                }
-                return Nummerplade;
-            }
-            set { value = Nummerplade; }
+            get { return _nummerplade; }
+            set { _nummerplade = value; }
         }
 
         public DateTime Dato
@@ -26,9 +20,13 @@ namespace BilletLibrary
             get { return Dato; }
         }
 
-        public Kørertøj(string Nummerplade)
+        public Kørertøj(string nummerplade)
         {
-            
+            _nummerplade = nummerplade;
+            //if (nummerplade.Length > 7)
+            //{
+            //    throw new ArgumentException("Max 7 tegn i nummerplade");
+            //}
         }
         public abstract int Pris();
 
