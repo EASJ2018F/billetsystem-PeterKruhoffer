@@ -9,6 +9,8 @@ namespace BilletLibrary
     public abstract class Kørertøj
     {
         private string _nummerplade;
+        private DateTime _dato;
+        private bool _brobizz;
         public string Nummerplade
         {
             get { return _nummerplade; }
@@ -17,18 +19,43 @@ namespace BilletLibrary
 
         public DateTime Dato
         {
-            get { return Dato; }
+            get { return _dato; }
+            set { _dato = value; }
         }
 
-        public Kørertøj(string nummerplade)
+        public bool HarBrobizz
+        {
+            get { return _brobizz; }
+            set { _brobizz = value; }
+        }
+
+        public Kørertøj(string nummerplade, DateTime dato)
         {
             _nummerplade = nummerplade;
+            _dato = dato;
             if (nummerplade.Length > 7)
             {
                 throw new ArgumentException("Max 7 tegn i nummerplade");
             }
         }
-        public abstract int Pris();
+
+        public virtual int Pris()
+        {
+            if (Dato.DayOfWeek == DayOfWeek.Saturday || Dato.DayOfWeek == DayOfWeek.Sunday)
+            {
+                if (HarBrobizz)
+                {
+                    return 280 - (20 / 100) - (5 / 100);
+                }
+                return 280 - (20 / 100);
+            }
+            else if (HarBrobizz)
+            {
+                return 280 -(5/100);
+            }
+
+            return 280;
+        }
 
         public abstract string TypeAfKørertøj();
     }

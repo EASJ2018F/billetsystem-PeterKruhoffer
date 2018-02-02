@@ -8,8 +8,22 @@ namespace BilletLibrary
 {
     public class Bil : Kørertøj
     {
-        public override int Pris()
+        public override int Pris() 
         {
+            if (HarBrobizz && Dato.DayOfWeek == DayOfWeek.Saturday || Dato.DayOfWeek == DayOfWeek.Sunday)
+            {
+
+                return 240 - (20 / 100) - (5 / 100);
+            }
+            if (Dato.DayOfWeek == DayOfWeek.Saturday || Dato.DayOfWeek == DayOfWeek.Sunday)
+            {
+                return 240 - (20 / 100);
+            }
+            if (HarBrobizz)
+            {
+                return 240 - (5 / 100);
+            }
+
             return 240;
         }
 
@@ -19,7 +33,7 @@ namespace BilletLibrary
         }
 
 
-        public Bil(string Nummerplade) : base(Nummerplade)
+        public Bil(string nummerplade, DateTime dato) : base(nummerplade, dato)
         {
         }
     }

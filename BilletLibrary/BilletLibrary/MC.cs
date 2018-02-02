@@ -10,6 +10,10 @@ namespace BilletLibrary
     {
         public override int Pris()
         {
+            if (HarBrobizz)
+            {
+                return 125 - (5 / 100);
+            }
             return 125;
         }
 
@@ -18,7 +22,7 @@ namespace BilletLibrary
             return "MC";
         }
 
-        public MC(string Nummerplade) : base(Nummerplade)
+        public MC(string Nummerplade, DateTime dato) : base(Nummerplade, dato)
         {
         }
     }
