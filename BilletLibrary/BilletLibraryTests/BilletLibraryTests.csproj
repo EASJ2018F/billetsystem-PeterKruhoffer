@@ -59,6 +59,8 @@
     <Compile Include="BilTests.cs" />
     <Compile Include="MCTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ØrersundsBilTests.cs" />
+    <Compile Include="ØrersundsMCTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -6,24 +6,24 @@ using System.Threading.Tasks;
 
 namespace BilletLibrary
 {
-    public class MC : Kørertøj
+    public class ØrersundsBil : Kørertøj
     {
+        public ØrersundsBil(string nummerplade, DateTime dato) : base(nummerplade, dato)
+        {
+        }
+
         public override int Pris(int pris)
         {
             if (HarBrobizz)
             {
-                return 125 - (5 / 100);
+                return 161;
             }
-            return 125;
+            return 410;
         }
 
         public override string TypeAfKørertøj()
         {
-            return "MC";
-        }
-
-        public MC(string Nummerplade, DateTime dato) : base(Nummerplade, dato)
-        {
+            return "Ørersund Bil";
         }
     }
 }

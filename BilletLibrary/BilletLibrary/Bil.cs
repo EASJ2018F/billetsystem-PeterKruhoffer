@@ -8,23 +8,21 @@ namespace BilletLibrary
 {
     public class Bil : Kørertøj
     {
-        public override int Pris() 
-        {
-            if (HarBrobizz && Dato.DayOfWeek == DayOfWeek.Saturday || Dato.DayOfWeek == DayOfWeek.Sunday)
-            {
-
-                return 240 - (20 / 100) - (5 / 100);
-            }
-            if (Dato.DayOfWeek == DayOfWeek.Saturday || Dato.DayOfWeek == DayOfWeek.Sunday)
-            {
-                return 240 - (20 / 100);
-            }
+        public override int Pris(int pris) 
+        { 
+            if (Dato.DayOfWeek == DayOfWeek.Saturday || Dato.DayOfWeek == DayOfWeek.Sunday && HarBrobizz )
+                {
+                    return pris - ((pris /100*20) + (pris /100*5));
+                }
+            if (Dato.DayOfWeek == DayOfWeek.Saturday || Dato.DayOfWeek == DayOfWeek.Sunday && !HarBrobizz)
+                    {
+                        return pris - (pris /100*20);
+                    }
             if (HarBrobizz)
             {
-                return 240 - (5 / 100);
+                return pris - pris /100*5;
             }
-
-            return 240;
+            return pris;
         }
 
         public override string TypeAfKørertøj()

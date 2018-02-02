@@ -17,7 +17,7 @@ namespace BilletLibrary.Tests
             //Arange
             MC mc = new MC("0123456", DateTime.Today);
             //Act
-            int pris = mc.Pris();
+            int pris = mc.Pris(240);
             //Assert
             Assert.AreEqual(125, pris);
         }

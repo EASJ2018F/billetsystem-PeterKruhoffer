@@ -39,23 +39,7 @@ namespace BilletLibrary
             }
         }
 
-        public virtual int Pris()
-        {
-            if (Dato.DayOfWeek == DayOfWeek.Saturday || Dato.DayOfWeek == DayOfWeek.Sunday)
-            {
-                if (HarBrobizz)
-                {
-                    return 280 - (20 / 100) - (5 / 100);
-                }
-                return 280 - (20 / 100);
-            }
-            else if (HarBrobizz)
-            {
-                return 280 -(5/100);
-            }
-
-            return 280;
-        }
+        public abstract int Pris(int pris);
 
         public abstract string TypeAfKørertøj();
     }

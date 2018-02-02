@@ -17,7 +17,7 @@ namespace BilletLibrary.Tests
             //Arange
             Bil bil = new Bil("0123456", DateTime.Today);
             //Act
-            int pris = bil.Pris();
+            int pris = bil.Pris(240);
             //Assert
             Assert.AreEqual(240,pris);
         }
@@ -42,27 +42,41 @@ namespace BilletLibrary.Tests
         }
 
         [TestMethod]
-        public void HarBrobizzBilTest()
+        public void HarBrobizzHverdagBilTest()
         {
             //Arange
             Bil bil = new Bil("1234567",DateTime.Today);
             bil.HarBrobizz = true;
             //Act
-            int pris = bil.Pris();
+            int pris = bil.Pris(240);
             //Assert
-            Assert.AreEqual(240,pris);
+            Assert.AreEqual(230,pris);
         }
 
         [TestMethod]
         public void WeekendHarBrobizzRabatTest()
         {
             //Arange
-            DateTime dato = new DateTime(2017,02,03);
+            DateTime dato = new DateTime(2018,02,03);
             Bil bil = new Bil("1234567",dato);
+            bil.HarBrobizz = true;
             //Act
-            int pris = bil.Pris();
+            int pris = bil.Pris(240);
             //Assert
-            Assert.AreEqual(240,pris);
+            Assert.AreEqual(190,pris);
+        }
+
+        [TestMethod]
+        public void WeekendUdenBrobizzRabatTest()
+        {
+            //Arange
+            DateTime dato = new DateTime(2018, 02, 04);
+            Bil bil = new Bil("1234567", dato);
+            bil.HarBrobizz = false;
+            //Act
+            int pris = bil.Pris(240);
+            //Assert
+            Assert.AreEqual(200, pris);
         }
     }
 }
