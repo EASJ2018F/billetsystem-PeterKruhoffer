@@ -42,5 +42,7 @@ namespace BilletLibrary
         public abstract int Pris(int pris);
 
         public abstract string TypeAfKørertøj();
+
+        
     }
 }

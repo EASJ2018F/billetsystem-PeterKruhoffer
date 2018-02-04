@@ -12,7 +12,7 @@ namespace BilletLibrary
         { 
             if (Dato.DayOfWeek == DayOfWeek.Saturday || Dato.DayOfWeek == DayOfWeek.Sunday && HarBrobizz )
                 {
-                    return pris - ((pris /100*20) + (pris /100*5));
+                    return pris - ((pris / 100*20) + (pris /100*5));
                 }
             if (Dato.DayOfWeek == DayOfWeek.Saturday || Dato.DayOfWeek == DayOfWeek.Sunday && !HarBrobizz)
                     {

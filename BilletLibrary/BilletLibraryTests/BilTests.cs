@@ -15,7 +15,8 @@ namespace BilletLibrary.Tests
         public void BilPrisTest()
         {
             //Arange
-            Bil bil = new Bil("0123456", DateTime.Today);
+            DateTime dato = new DateTime(2018, 02, 02);
+            Bil bil = new Bil("0123456", dato);
             //Act
             int pris = bil.Pris(240);
             //Assert
@@ -45,7 +46,8 @@ namespace BilletLibrary.Tests
         public void HarBrobizzHverdagBilTest()
         {
             //Arange
-            Bil bil = new Bil("1234567",DateTime.Today);
+            DateTime dato = new DateTime(2018, 02, 02);
+            Bil bil = new Bil("1234567",dato);
             bil.HarBrobizz = true;
             //Act
             int pris = bil.Pris(240);
